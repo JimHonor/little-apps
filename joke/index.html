@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tell Me a Joke</title>
+    <script type="module" crossorigin src="/little-apps/assets/joke-BfA3SudG.js"></script>
+    <link rel="modulepreload" crossorigin href="/little-apps/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/little-apps/assets/joke-Cx_jUK0s.css">
+  </head>
+  <body>
+    <div id="app" class="h-screen">
+      <div class="py-2">
+        <h1 class="title text-center">Joke</h1>
+      </div>
+      <hr class="mb-6" />
+      <div class="max-w-[480px] px-4 mx-auto">
+        <div class="relative text-right">
+          <div id="setup" class="msg msg--r text-left">loading...</div>
+          <div
+            class="square square--r absolute top-1/2 right-0 translate-x-1 -translate-y-1/2 rotate-45"
+          ></div>
+        </div>
+        <div id="punchline-wrapper" class="relative mt-6 hidden">
+          <div id="punchline" class="msg msg--l">loading...</div>
+          <div
+            class="square square--l absolute top-1/2 left-0 -translate-x-1 -translate-y-1/2 rotate-45"
+          ></div>
+        </div>
+      </div>
+      <div class="fixed inset-x-0 bottom-0">
+        <button id="btn" class="btn w-full" data-type="tell" disabled>
+          Tell Me
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
